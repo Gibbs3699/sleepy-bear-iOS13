@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840057312785A914004F8576 /* ringing-clcok.json in Resources */ = {isa = PBXBuildFile; fileRef = 840057302785A914004F8576 /* ringing-clcok.json */; };
+		840057332785AA5F004F8576 /* alarm-clock.json in Resources */ = {isa = PBXBuildFile; fileRef = 840057322785AA5F004F8576 /* alarm-clock.json */; };
+		840057352785B0BA004F8576 /* notification-bell.json in Resources */ = {isa = PBXBuildFile; fileRef = 840057342785B0BA004F8576 /* notification-bell.json */; };
+		840057382785DFAD004F8576 /* 16601-red-ring-bell.json in Resources */ = {isa = PBXBuildFile; fileRef = 840057362785DFAD004F8576 /* 16601-red-ring-bell.json */; };
+		840057392785DFAD004F8576 /* 99-bell.json in Resources */ = {isa = PBXBuildFile; fileRef = 840057372785DFAD004F8576 /* 99-bell.json */; };
 		84DE9066278497C6003AFA9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE9065278497C6003AFA9D /* AppDelegate.swift */; };
 		84DE9068278497C6003AFA9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE9067278497C6003AFA9D /* SceneDelegate.swift */; };
 		84DE906A278497C6003AFA9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE9069278497C6003AFA9D /* ContentView.swift */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840057302785A914004F8576 /* ringing-clcok.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ringing-clcok.json"; sourceTree = SOURCE_ROOT; };
+		840057322785AA5F004F8576 /* alarm-clock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "alarm-clock.json"; sourceTree = SOURCE_ROOT; };
+		840057342785B0BA004F8576 /* notification-bell.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "notification-bell.json"; sourceTree = SOURCE_ROOT; };
+		840057362785DFAD004F8576 /* 16601-red-ring-bell.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "16601-red-ring-bell.json"; sourceTree = SOURCE_ROOT; };
+		840057372785DFAD004F8576 /* 99-bell.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "99-bell.json"; sourceTree = SOURCE_ROOT; };
 		84DE9062278497C6003AFA9D /* Sleepy bear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleepy bear.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DE9065278497C6003AFA9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84DE9067278497C6003AFA9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +96,11 @@
 		84DE907927849EEA003AFA9D /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
+				840057372785DFAD004F8576 /* 99-bell.json */,
+				840057362785DFAD004F8576 /* 16601-red-ring-bell.json */,
+				840057322785AA5F004F8576 /* alarm-clock.json */,
+				840057302785A914004F8576 /* ringing-clcok.json */,
+				840057342785B0BA004F8576 /* notification-bell.json */,
 				84DE907A27849F1C003AFA9D /* 42828-sleeping-bear.json */,
 			);
 			path = Lottie;
@@ -155,9 +170,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				84DE9072278497C8003AFA9D /* LaunchScreen.storyboard in Resources */,
+				840057312785A914004F8576 /* ringing-clcok.json in Resources */,
+				840057332785AA5F004F8576 /* alarm-clock.json in Resources */,
 				84DE906F278497C8003AFA9D /* Preview Assets.xcassets in Resources */,
 				84DE906C278497C8003AFA9D /* Assets.xcassets in Resources */,
+				840057392785DFAD004F8576 /* 99-bell.json in Resources */,
+				840057352785B0BA004F8576 /* notification-bell.json in Resources */,
 				84DE907B27849F1C003AFA9D /* 42828-sleeping-bear.json in Resources */,
+				840057382785DFAD004F8576 /* 16601-red-ring-bell.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
