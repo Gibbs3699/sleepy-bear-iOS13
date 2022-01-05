@@ -11,16 +11,22 @@ import SwiftUI
 struct ContentView: View {
     @State var tap = false
     @State var press = false
+    @State var viewState = CGSize.zero
     
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.968627451, green: 0.8352941176, blue: 0.6117647059, alpha: 1)), Color(#colorLiteral(red: 0.8078431373, green: 0.8980392157, blue: 0.8156862745, alpha: 0.8104506739))]), startPoint: .topLeading, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/)
+            LinearGradient(gradient: Gradient(colors: [Color(press ? #colorLiteral(red: 0.6666666667, green: 0.2274509804, blue: 0.2274509804, alpha: 0.803183044): #colorLiteral(red: 0.968627451, green: 0.8352941176, blue: 0.6117647059, alpha: 1)), Color( press ? #colorLiteral(red: 0.6431372549, green: 0.7176470588, blue: 0.5294117647, alpha: 0.7802229117) : #colorLiteral(red: 0.8078431373, green: 0.8980392157, blue: 0.8156862745, alpha: 0.8104506739))]), startPoint: .topLeading, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack {
                 LottieView(name: "42828-sleeping-bear", loopMode: .loop)
                     .frame(width: 400, height: 400)
                     .shadow(color: Color(#colorLiteral(red: 0.3036622327, green: 0.1979972735, blue: 0.169330228, alpha: 1)), radius: 3, x: 6, y: 6)
                     .shadow(color: Color(#colorLiteral(red: 0.8461962622, green: 0.9077365563, blue: 0.9120236792, alpha: 0.85)), radius: 3, x: 7, y: 7)
+                    .offset(y: press ? -1000 : 0)
+                    .rotation3DEffect(Angle(degrees: press ? Double(viewState.height / 10) - 10 : 0), axis: (x: 10.0, y: 0.0, z: 0.0))
+                    .scaleEffect(press ? 0.9 : 1)
+                    .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
+                    .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
 
                 
                 Spacer()
@@ -59,12 +65,12 @@ struct ContentView: View {
     
                 Text("The Bear is sleepy!")
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).bold()
-                    .foregroundColor(Color(#colorLiteral(red: 0.368627451, green: 0.2705882353, blue: 0.2941176471, alpha: 1)))
+                    .foregroundColor(Color(press ? #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0) : #colorLiteral(red: 0.368627451, green: 0.2705882353, blue: 0.2941176471, alpha: 1)))
                 
                 Text("Tap the bell to ring the bear up!")
                     .font(.system(size: 15))
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(Color(#colorLiteral(red: 0.368627451, green: 0.2705882353, blue: 0.2941176471, alpha: 1)))
+                    .foregroundColor(Color(press ? #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0) : #colorLiteral(red: 0.368627451, green: 0.2705882353, blue: 0.2941176471, alpha: 1)))
                 
             }
             .frame(width: 300, height: 650, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
