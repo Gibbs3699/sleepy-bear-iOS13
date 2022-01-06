@@ -15,7 +15,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color(press ? #colorLiteral(red: 0.8949224299, green: 0.1303431068, blue: 0.3013925252, alpha: 1): #colorLiteral(red: 0.968627451, green: 0.8352941176, blue: 0.6117647059, alpha: 1)), Color( press ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) : #colorLiteral(red: 0.8078431373, green: 0.8980392157, blue: 0.8156862745, alpha: 0.8104506739))]), startPoint: .topLeading, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/)
+            LinearGradient(gradient: Gradient(colors: [Color(press ? #colorLiteral(red: 0.9607843137, green: 0.9333333333, blue: 0.862745098, alpha: 1): #colorLiteral(red: 0.968627451, green: 0.8352941176, blue: 0.6117647059, alpha: 1)), Color( press ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) : #colorLiteral(red: 0.8078431373, green: 0.8980392157, blue: 0.8156862745, alpha: 0.8104506739))]), startPoint: .topLeading, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack {
                 ZStack {
@@ -29,9 +29,10 @@ struct ContentView: View {
                         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     
                     ZStack {
+                        
                         LottieView(name: "11517-christmas-bounce", loopMode: .loop)
                             .frame(width: 400, height: 400)
-                            .offset(y: -150 )
+                            .offset(y: press ? -150 : 0)
                             .opacity(press ? 0.6 : 0)
                             .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
                         
@@ -54,29 +55,29 @@ struct ContentView: View {
                             LottieView(name: "89858-christmas-tree-with-flying-star", loopMode: .loop)
                                 .frame(width: 200, height: 200)
                                 .shadow(radius: 20)
-                                .offset(x: -80,y: 60 )
+                                .offset(x: -80,y: press ? 60 : 600)
                                 .rotationEffect(Angle.degrees(-25))
         //                            .scaleEffect(400)
                                 .opacity(press ? 1 : 0)
                                 .animation(Animation.easeIn(duration: 2).delay(0.2))
-                                .animation(Animation.easeOut(duration: 0.1).delay(0.1))
+                                .animation(Animation.easeOut(duration: 0.01).delay(0))
                             
                             LottieView(name: "89858-christmas-tree-with-flying-star", loopMode: .loop)
                                 .frame(width: 200, height: 200)
                                 .shadow(radius: 20)
-                                .offset(x: 80,y: 60 )
+                                .offset(x: 80,y: press ? 60 : 600 )
                                 .rotationEffect(Angle.degrees(25))
         //                            .scaleEffect(400)
                                 .opacity(press ? 1 : 0)
                                 .animation(Animation.easeIn(duration: 2).delay(0.2))
-                                .animation(Animation.easeOut(duration: 0.1).delay(0.1))
+                                .animation(Animation.easeOut(duration: 0.01).delay(0))
                         }
                         
                         LottieView(name: "1145-merrychristmas", loopMode: .loop)
                             .frame(width: 500, height: 500)
                             .clipShape(RoundedRectangle(cornerRadius: 100))
                             .shadow(radius: 20)
-                            .offset(y: 410 )
+                            .offset(y: press ? 410 : 600 )
     //                            .scaleEffect(400)
                             .opacity(press ? 0.9 : 0)
                             .animation(Animation.easeIn(duration: 1).delay(0.1))

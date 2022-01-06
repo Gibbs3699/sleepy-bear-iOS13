@@ -22,6 +22,7 @@
 		8463D25F2786063400BAC6EF /* 1145-merrychristmas.json in Resources */ = {isa = PBXBuildFile; fileRef = 8463D25C2786063400BAC6EF /* 1145-merrychristmas.json */; };
 		8463D2602786063400BAC6EF /* 12720-santa-claus-loading-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 8463D25D2786063400BAC6EF /* 12720-santa-claus-loading-animation.json */; };
 		8463D26227868C1D00BAC6EF /* 12476-bell.json in Resources */ = {isa = PBXBuildFile; fileRef = 8463D26127868C1D00BAC6EF /* 12476-bell.json */; };
+		8463D2642786947400BAC6EF /* 89787-christmas-fireworks.json in Resources */ = {isa = PBXBuildFile; fileRef = 8463D2632786947300BAC6EF /* 89787-christmas-fireworks.json */; };
 		84DE9066278497C6003AFA9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE9065278497C6003AFA9D /* AppDelegate.swift */; };
 		84DE9068278497C6003AFA9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE9067278497C6003AFA9D /* SceneDelegate.swift */; };
 		84DE906A278497C6003AFA9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE9069278497C6003AFA9D /* ContentView.swift */; };
@@ -49,6 +50,7 @@
 		8463D25C2786063400BAC6EF /* 1145-merrychristmas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "1145-merrychristmas.json"; sourceTree = SOURCE_ROOT; };
 		8463D25D2786063400BAC6EF /* 12720-santa-claus-loading-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "12720-santa-claus-loading-animation.json"; sourceTree = SOURCE_ROOT; };
 		8463D26127868C1D00BAC6EF /* 12476-bell.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "12476-bell.json"; sourceTree = SOURCE_ROOT; };
+		8463D2632786947300BAC6EF /* 89787-christmas-fireworks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "89787-christmas-fireworks.json"; sourceTree = SOURCE_ROOT; };
 		84DE9062278497C6003AFA9D /* Sleepy bear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleepy bear.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DE9065278497C6003AFA9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84DE9067278497C6003AFA9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		84DE907927849EEA003AFA9D /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
+				8463D2632786947300BAC6EF /* 89787-christmas-fireworks.json */,
 				8463D26127868C1D00BAC6EF /* 12476-bell.json */,
 				8463D25C2786063400BAC6EF /* 1145-merrychristmas.json */,
 				8463D25D2786063400BAC6EF /* 12720-santa-claus-loading-animation.json */,
@@ -208,6 +211,7 @@
 				8463D26227868C1D00BAC6EF /* 12476-bell.json in Resources */,
 				84DE906F278497C8003AFA9D /* Preview Assets.xcassets in Resources */,
 				8400573D2785EEBD004F8576 /* 4622-bear.json in Resources */,
+				8463D2642786947400BAC6EF /* 89787-christmas-fireworks.json in Resources */,
 				8400574327860334004F8576 /* 88454-christmas.json in Resources */,
 				8463D2602786063400BAC6EF /* 12720-santa-claus-loading-animation.json in Resources */,
 				8463D25E2786063400BAC6EF /* 88519-santa-is-coming.json in Resources */,
