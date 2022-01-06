@@ -15,7 +15,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color(press ? #colorLiteral(red: 0.6509803922, green: 0.8117647059, blue: 0.5960784314, alpha: 1): #colorLiteral(red: 0.968627451, green: 0.8352941176, blue: 0.6117647059, alpha: 1)), Color( press ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) : #colorLiteral(red: 0.8078431373, green: 0.8980392157, blue: 0.8156862745, alpha: 0.8104506739))]), startPoint: .topLeading, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/)
+            LinearGradient(gradient: Gradient(colors: [Color(press ? #colorLiteral(red: 0.8949224299, green: 0.1303431068, blue: 0.3013925252, alpha: 1): #colorLiteral(red: 0.968627451, green: 0.8352941176, blue: 0.6117647059, alpha: 1)), Color( press ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) : #colorLiteral(red: 0.8078431373, green: 0.8980392157, blue: 0.8156862745, alpha: 0.8104506739))]), startPoint: .topLeading, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack {
                 ZStack {
@@ -31,28 +31,65 @@ struct ContentView: View {
                     ZStack {
                         LottieView(name: "11517-christmas-bounce", loopMode: .loop)
                             .frame(width: 400, height: 400)
-                            .offset(y: -200 )
+                            .offset(y: -150 )
                             .opacity(press ? 0.6 : 0)
                             .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
                         
-                        LottieView(name: "88454-christmas", loopMode: .loop)
+                        LottieView(name: "10347-christmas-background", loopMode: .loop)
                             .frame(width: 400, height: 400)
 //                            .offset(y: -200 )
                             .opacity(press ? 0.6 : 0)
                             .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
                         
                         LottieView(name: "4622-bear", loopMode: .loop)
-                            .frame(width: 400, height: 400)
+                            .frame(width: 400, height: 500)
                             .opacity(press ? 1 : 0)
                             .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
+                        
+                    }
+                    
+                    ZStack {
+                        
+                        HStack {
+                            LottieView(name: "89858-christmas-tree-with-flying-star", loopMode: .loop)
+                                .frame(width: 200, height: 200)
+                                .shadow(radius: 20)
+                                .offset(x: -80,y: 60 )
+                                .rotationEffect(Angle.degrees(-25))
+        //                            .scaleEffect(400)
+                                .opacity(press ? 1 : 0)
+                                .animation(Animation.easeIn(duration: 2).delay(0.2))
+                                .animation(Animation.easeOut(duration: 0.1).delay(0.1))
+                            
+                            LottieView(name: "89858-christmas-tree-with-flying-star", loopMode: .loop)
+                                .frame(width: 200, height: 200)
+                                .shadow(radius: 20)
+                                .offset(x: 80,y: 60 )
+                                .rotationEffect(Angle.degrees(25))
+        //                            .scaleEffect(400)
+                                .opacity(press ? 1 : 0)
+                                .animation(Animation.easeIn(duration: 2).delay(0.2))
+                                .animation(Animation.easeOut(duration: 0.1).delay(0.1))
+                        }
+                        
+                        LottieView(name: "1145-merrychristmas", loopMode: .loop)
+                            .frame(width: 500, height: 500)
+                            .clipShape(RoundedRectangle(cornerRadius: 100))
+                            .shadow(radius: 20)
+                            .offset(y: 410 )
+    //                            .scaleEffect(400)
+                            .opacity(press ? 0.9 : 0)
+                            .animation(Animation.easeIn(duration: 1).delay(0.1))
+                            .animation(Animation.easeOut(duration: 0.1).delay(0.1))
                     }
                 }
                 
                 Spacer()
                 
                 ZStack {
-                    LottieView(name: "16601-red-ring-bell" , loopMode: .loop)
-                        .frame(width: 160, height: 160)
+                    LottieView(name: "12476-bell" , loopMode: .loop)
+                        .frame(width: 120, height: 120)
+                        .opacity(0.8)
                 }
                 .frame(width: 120, height: 120)
                 .background(
@@ -93,16 +130,22 @@ struct ContentView: View {
                     }
             )
     
-                Text("The Bear is sleepy!")
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).bold()
-                    .foregroundColor(Color(press ? #colorLiteral(red: 0.368627451, green: 0.2705882353, blue: 0.2941176471, alpha: 1) : #colorLiteral(red: 0.368627451, green: 0.2705882353, blue: 0.2941176471, alpha: 1)))
-                
-                Text("Tap the bell to ring the bear up!")
-                    .font(.system(size: 15))
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(Color(press ? #colorLiteral(red: 0.368627451, green: 0.2705882353, blue: 0.2941176471, alpha: 1)  : #colorLiteral(red: 0.368627451, green: 0.2705882353, blue: 0.2941176471, alpha: 1)))
+                VStack() {
+                    Text(press ? "" : "The Bear is sleepy!" )
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).bold()
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color(press ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) : #colorLiteral(red: 0.368627451, green: 0.2705882353, blue: 0.2941176471, alpha: 1)))
+                    
+                    
+                    Text(press ? "Tap the bell to ring the bear up!" : "Tap the bell to put the bear to sleep")
+                        .font(.system(size: 10))
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(Color(press ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)  : #colorLiteral(red: 0.368627451, green: 0.2705882353, blue: 0.2941176471, alpha: 1)))
+                }
+                .frame(width: 400, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
             }
+            .padding(.bottom, 100)
             .frame(width: 300, height: 650, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         }
             

@@ -17,6 +17,11 @@
 		8400574127860334004F8576 /* 11517-christmas-bounce.json in Resources */ = {isa = PBXBuildFile; fileRef = 8400573E27860333004F8576 /* 11517-christmas-bounce.json */; };
 		8400574227860334004F8576 /* 89858-christmas-tree-with-flying-star.json in Resources */ = {isa = PBXBuildFile; fileRef = 8400573F27860333004F8576 /* 89858-christmas-tree-with-flying-star.json */; };
 		8400574327860334004F8576 /* 88454-christmas.json in Resources */ = {isa = PBXBuildFile; fileRef = 8400574027860333004F8576 /* 88454-christmas.json */; };
+		8400575B2786045A004F8576 /* 10347-christmas-background.json in Resources */ = {isa = PBXBuildFile; fileRef = 8400575A2786045A004F8576 /* 10347-christmas-background.json */; };
+		8463D25E2786063400BAC6EF /* 88519-santa-is-coming.json in Resources */ = {isa = PBXBuildFile; fileRef = 8463D25B2786063400BAC6EF /* 88519-santa-is-coming.json */; };
+		8463D25F2786063400BAC6EF /* 1145-merrychristmas.json in Resources */ = {isa = PBXBuildFile; fileRef = 8463D25C2786063400BAC6EF /* 1145-merrychristmas.json */; };
+		8463D2602786063400BAC6EF /* 12720-santa-claus-loading-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 8463D25D2786063400BAC6EF /* 12720-santa-claus-loading-animation.json */; };
+		8463D26227868C1D00BAC6EF /* 12476-bell.json in Resources */ = {isa = PBXBuildFile; fileRef = 8463D26127868C1D00BAC6EF /* 12476-bell.json */; };
 		84DE9066278497C6003AFA9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE9065278497C6003AFA9D /* AppDelegate.swift */; };
 		84DE9068278497C6003AFA9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE9067278497C6003AFA9D /* SceneDelegate.swift */; };
 		84DE906A278497C6003AFA9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE9069278497C6003AFA9D /* ContentView.swift */; };
@@ -39,6 +44,11 @@
 		8400573E27860333004F8576 /* 11517-christmas-bounce.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "11517-christmas-bounce.json"; sourceTree = SOURCE_ROOT; };
 		8400573F27860333004F8576 /* 89858-christmas-tree-with-flying-star.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "89858-christmas-tree-with-flying-star.json"; sourceTree = SOURCE_ROOT; };
 		8400574027860333004F8576 /* 88454-christmas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "88454-christmas.json"; sourceTree = SOURCE_ROOT; };
+		8400575A2786045A004F8576 /* 10347-christmas-background.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "10347-christmas-background.json"; sourceTree = SOURCE_ROOT; };
+		8463D25B2786063400BAC6EF /* 88519-santa-is-coming.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "88519-santa-is-coming.json"; sourceTree = SOURCE_ROOT; };
+		8463D25C2786063400BAC6EF /* 1145-merrychristmas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "1145-merrychristmas.json"; sourceTree = SOURCE_ROOT; };
+		8463D25D2786063400BAC6EF /* 12720-santa-claus-loading-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "12720-santa-claus-loading-animation.json"; sourceTree = SOURCE_ROOT; };
+		8463D26127868C1D00BAC6EF /* 12476-bell.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "12476-bell.json"; sourceTree = SOURCE_ROOT; };
 		84DE9062278497C6003AFA9D /* Sleepy bear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleepy bear.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DE9065278497C6003AFA9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84DE9067278497C6003AFA9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +116,11 @@
 		84DE907927849EEA003AFA9D /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
+				8463D26127868C1D00BAC6EF /* 12476-bell.json */,
+				8463D25C2786063400BAC6EF /* 1145-merrychristmas.json */,
+				8463D25D2786063400BAC6EF /* 12720-santa-claus-loading-animation.json */,
+				8463D25B2786063400BAC6EF /* 88519-santa-is-coming.json */,
+				8400575A2786045A004F8576 /* 10347-christmas-background.json */,
 				8400573E27860333004F8576 /* 11517-christmas-bounce.json */,
 				8400574027860333004F8576 /* 88454-christmas.json */,
 				8400573F27860333004F8576 /* 89858-christmas-tree-with-flying-star.json */,
@@ -187,10 +202,15 @@
 				8400574227860334004F8576 /* 89858-christmas-tree-with-flying-star.json in Resources */,
 				84DE9072278497C8003AFA9D /* LaunchScreen.storyboard in Resources */,
 				840057312785A914004F8576 /* ringing-clcok.json in Resources */,
+				8463D25F2786063400BAC6EF /* 1145-merrychristmas.json in Resources */,
+				8400575B2786045A004F8576 /* 10347-christmas-background.json in Resources */,
 				840057332785AA5F004F8576 /* alarm-clock.json in Resources */,
+				8463D26227868C1D00BAC6EF /* 12476-bell.json in Resources */,
 				84DE906F278497C8003AFA9D /* Preview Assets.xcassets in Resources */,
 				8400573D2785EEBD004F8576 /* 4622-bear.json in Resources */,
 				8400574327860334004F8576 /* 88454-christmas.json in Resources */,
+				8463D2602786063400BAC6EF /* 12720-santa-claus-loading-animation.json in Resources */,
+				8463D25E2786063400BAC6EF /* 88519-santa-is-coming.json in Resources */,
 				8400573C2785EEBD004F8576 /* 71699-background.json in Resources */,
 				84DE906C278497C8003AFA9D /* Assets.xcassets in Resources */,
 				840057392785DFAD004F8576 /* 99-bell.json in Resources */,
